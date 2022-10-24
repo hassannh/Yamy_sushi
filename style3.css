@@ -11,12 +11,15 @@ body {
 
 }
 
-.logo{
+.logo_name{
     color: rgba(5, 4, 4, 0.63);
-    font-size: 30px;
+    font-size: 19px;
     font-family: Arial;
     float: left; 
     margin-left: 5%;
+    position: relative;
+    right: 18%;
+    top: 7px;
 }
 .menu ul{
     display: flex;
@@ -126,15 +129,19 @@ ul li{
 
 
 }
-.service_card{
-    background-color: rgb(235, 240, 240);
-    border: 1px solid black;
-    height: 150px;
-    width: 160px;
-    display: flex;
-    justify-content: center;
-    margin-left: 20px;
 
+.service_cards1{
+    /* background:#a2aab3fb ; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:1px solid;
+    border-color: transparent;
+    border-radius: 20px;
+    margin: 20px;
+    padding-top:50px;
+    padding-bottom:40px;
+    opacity: 0.9;
 }
 .example{
     height: 200px;
@@ -163,6 +170,7 @@ footer div{
     margin-right: 30px;
     margin-left: 40px;
     background-color: aliceblue;
+    gap: 30px;
 }
 .service_card{
     background:#a2aab3fb ;
@@ -176,19 +184,23 @@ footer div{
     padding-top:50px;
     padding-bottom:40px;
     opacity: 0.9;
+    border: 1px solid black;
+    height: 150px;
+    width: 190px;
+    justify-content: center;
 }
-.card_info{
-    position: relative;
-    
-}
+
 .menu :hover{
     background-color: beige;
     /* background-color: transparent !important;
     box-shadow: none !important; */
 }
+/* footer div .feedback_zone{
+    justify-content: center;
+} */
 
-@media screen and (max-width: 700px) {
-    .search{
-       
-    }
+.second-pic{
+    position: relative;
+    left: 47%;
+    
 }
