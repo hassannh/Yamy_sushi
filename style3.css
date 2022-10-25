@@ -15,11 +15,12 @@ body {
     color: rgba(5, 4, 4, 0.63);
     font-size: 19px;
     font-family: Arial;
-    float: left; 
+    /* float: left;  */
     margin-left: 5%;
     position: relative;
     right: 18%;
-    top: 7px;
+    top: 3px;
+    
 }
 .menu ul{
     display: flex;
@@ -28,6 +29,7 @@ body {
     gap: 13%;
     width: 100%;
     position: fixed; 
+    background-color: beige;
 }
 
 ul li{
@@ -88,17 +90,7 @@ ul li{
     background-color: rgba(245, 245, 220, 0.395);
 
 }
-/* @media screen and (max-width:1499) {
-    .responsive{
-        width: 90%;
-    }
-    
-} */
-/* @media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-} */
+
 
 .content{
     display: flex;
@@ -131,7 +123,6 @@ ul li{
 }
 
 .service_cards1{
-    /* background:#a2aab3fb ; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -159,19 +150,21 @@ ul li{
 footer {
     display: flex;
     justify-content: center;
+    padding-top:90px;
 }
 footer .test {
-    width: 70%;
+    width: 93%;
     display: flex;
 }
 footer div{
     display: inline-table;
     margin-top: 20px;
-    margin-right: 30px;
-    margin-left: 40px;
     background-color: rgb(249, 251, 253);
-    gap: 30px;
+    gap: 218px;
     flex-direction: row;
+}
+footer div .feedback{
+    text-align: center;
 }
 .service_card{
     background:#a2aab3fb ;
@@ -193,8 +186,6 @@ footer div{
 
 .menu :hover{
     background-color: beige;
-    /* background-color: transparent !important;
-    box-shadow: none !important; */
 }
 .second-pic{
     text-align: right;
@@ -220,8 +211,71 @@ footer div{
     display: flex;
     flex-direction: row;
 }
-/* .about-pic #about-pic{
+
+                        /* contact */
+#contact{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-} */
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+#contact .icon img{
+    width: 70%;
+    height: 70%;
+    border: 1px solid;
+    border-radius: 0;
+    border-color: transparent;
+    display: block;
+    margin: auto;
+}
+#contact .fields{
+    grid-column: 1;
+    margin-left: 20px;
+}
+#contact .icon{
+    grid-column: 2;
+}
+#contact .fields #par{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+#contact .fields .form {
+    margin-bottom: 25px;
+}
+#contact .fields .form label{
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+
+#contact .fields .form input{
+    width: 70%;
+    height: 30px;
+    border-color: #111D2C;
+    border-radius:8px;
+    border-width: 2px;
+}
+
+#contact .fields .form textarea{
+    width: 70%;
+    border-color: #111D2C;
+    border-radius:8px;
+    border-width: 2px;
+}
+#contact .fields .form button{
+    cursor: pointer;
+    background-color: #111D2C;
+    border:solid 0.5px #111D2C;
+    border-radius:8px;
+    color:white;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 70%;
+}
+#contact .fields .form button:hover{
+    cursor: pointer;
+    background-color:#3883BC ;
+}
