@@ -169,8 +169,9 @@ footer div{
     margin-top: 20px;
     margin-right: 30px;
     margin-left: 40px;
-    background-color: aliceblue;
+    background-color: rgb(249, 251, 253);
     gap: 30px;
+    flex-direction: row;
 }
 .service_card{
     background:#a2aab3fb ;
@@ -195,12 +196,32 @@ footer div{
     /* background-color: transparent !important;
     box-shadow: none !important; */
 }
-/* footer div .feedback_zone{
-    justify-content: center;
-} */
-
 .second-pic{
-    position: relative;
-    left: 47%;
+    text-align: right;
+    margin-left: auto;
+    width: fit-content;
+    margin-right: 20px;
+    display: flex;
+    gap: 20px;
     
 }
+.second-pic #second-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.test{
+    background-color: rgb(250, 251, 252);
+    display: flex;
+    flex-direction: row;
+}
+.about-pic{
+    display: flex;
+    flex-direction: row;
+}
+/* .about-pic #about-pic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
