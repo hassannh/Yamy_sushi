@@ -99,25 +99,17 @@ ul li{
     flex-wrap: wrap;
 }
 .title{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 80px;
+    margin-top: 100px;
+    text-align: center;
     font-weight: bold;
     color: rgb(3, 2, 2);
     font-weight: bolder;
 }
 .cadre{
-    background-color: rgba(240, 248, 255, 0.059);
-    height: 300px;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
     display: flex;
     justify-content: center;
-    padding-top: 90PX;
-    position: relative;
-    top: 30px;
-    gap: 9%;
+    flex-wrap: wrap;
+
 
 
 }
@@ -129,9 +121,7 @@ ul li{
     border:1px solid;
     border-color: transparent;
     border-radius: 20px;
-    margin: 20px;
-    padding-top:50px;
-    padding-bottom:40px;
+    margin: 20px;   
     opacity: 0.9;
 }
 .example{
@@ -214,8 +204,24 @@ justify-content: space-around;
 .about-pic{
     display: flex;
     flex-direction: row;
-    padding-top: 20%;
+    margin-top: 20%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+} 
+.about-pic #about-title {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
+.about-pic .about-img {
+    width: 50%;
+    margin-top: 50px;
+}
+.about-pic .about-img img {
+    width: 100%;
+}
+
 
                         /* contact */
 #contact{
@@ -290,6 +296,8 @@ div.contact-title{
 section .order-menu{
     display: flex;
     padding-top: 20%;
+    flex-wrap: wrap;
+    justify-content: space-around;
    
 }
 
@@ -305,11 +313,13 @@ margin-right: auto;
 
 /* order list */
 .wrapper{
+    max-width: 700px;
     margin:0;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
-  .wrapper > div{
+  .wrapper div{
     width:200px;
     height: 300px;
     border: 1px solid #f0f0f0;
@@ -337,14 +347,6 @@ margin-right: auto;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* gap: 10px;
-    background-color: red;
-    height: fit-content; */
-    /* display: block;
-    margin-left: auto;
-    margin-right: auto; */
-
-    
   }
   
   .order-menu .order{
@@ -384,6 +386,11 @@ margin-right: auto;
     margin-top: 14px;
   }
 
+  .mobil-button {
+    display: none;
+  }
+
+
 @media screen and (max-width:500px) {
     body{
         background-image: url(image/bachgr.jpg);
@@ -391,6 +398,39 @@ margin-right: auto;
         background-size: cover;
         height: 210px;
     }
+    .mobil-button {
+        position: absolute;
+        right: 0%;
+        z-index: 3;
+        display: block;
+        padding: 10px;
+        background: blue;
+        cursor: pointer;
+      }
+
+    .menu ul {
+        position: absolute;
+        flex-direction: column;
+        gap: 10px;
+        z-index: 2;
+        top: 0%;
+        padding-bottom: 20px;
+        transition: all 400ms linear;
+
+    }
+    .menu .hide-menu {
+        top:-100%;
+    }
+
+    .menu .logo-menu {
+        display: flex;
+
+    }
+    .menu .logo-menu h2 {
+        margin-left: 30px;
+    }
+
+
     .second-pic{
         display: flex;
         flex-direction: column;
