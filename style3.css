@@ -154,6 +154,10 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    
+}
+footer .feedback{
+    
 }
 
 .service_card{
@@ -210,6 +214,7 @@ justify-content: space-around;
 .about-pic{
     display: flex;
     flex-direction: row;
+    padding-top: 20%;
 }
 
                         /* contact */
@@ -282,8 +287,9 @@ justify-content: space-around;
 div.contact-title{
     padding-right: 0%;
 }
-.order-menu{
+section .order-menu{
     display: flex;
+    padding-top: 20%;
    
 }
 
@@ -373,18 +379,23 @@ margin-right: auto;
     margin-top: 10%;
     justify-content: center;
   }
+  .logo_name{
+    transform: translateX(-3%);
+    margin-top: 14px;
+  }
+
 @media screen and (max-width:500px) {
+    body{
+        background-image: url(image/bachgr.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 210px;
+    }
     .second-pic{
         display: flex;
         flex-direction: column;
     }
-/* .cadre{
-     width:700px ;
-display:flex;
-flex-direction: column;
- 
 
-} */
 .res{
     width:100% ;
     display: flex;
@@ -426,7 +437,31 @@ flex-direction: column;
     margin-left: 23%;
 
 }
+#titlee{
 
-
+    padding-bottom: 16%;
+}
+#h1f{
+    text-align: center;
+    padding-right: 40px;
+}
+#second-title{
+    text-align: center;
+    padding-left: 150px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+.feedback{
+    margin-bottom:50px ;
+    text-align: center;
+    
+}
+.search{
+    margin-top: -10px;
+}
 
 }
