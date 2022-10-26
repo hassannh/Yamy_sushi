@@ -62,7 +62,7 @@ ul li{
     color: blue;
 }
 .search{
-    height: 80vh;
+    height: 36vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -81,7 +81,7 @@ ul li{
 }
 .search .input_button{
     width: 16%;
-    height: 7%;
+    height: 16%;
     margin-left: 2%;
 }
 .search .input_button .btn{
@@ -148,24 +148,14 @@ ul li{
     top: 60px;
 }
 footer {
-    display: flex;
     justify-content: center;
     padding-top:90px;
-}
-footer .test {
-    width: 93%;
+    background-color: rgb(250, 251, 252);
     display: flex;
-}
-footer div{
-    display: inline-table;
-    margin-top: 20px;
-    background-color: rgb(249, 251, 253);
-    gap: 218px;
     flex-direction: row;
+    justify-content: space-around;
 }
-footer div .feedback{
-    text-align: center;
-}
+
 .service_card{
     background:#a2aab3fb ;
     display: flex;
@@ -187,6 +177,12 @@ footer div .feedback{
 .menu :hover{
     background-color: beige;
 }
+.picture{
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+}
 .second-pic{
     text-align: right;
     margin-left: auto;
@@ -196,17 +192,21 @@ footer div .feedback{
     gap: 20px;
     
 }
+.pic1{
+    width:518px;
+    margin-left: 26px;
+}
+.con-pic{
+display: flex;
+justify-content: space-around;
+}
 .second-pic #second-title {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.test{
-    background-color: rgb(250, 251, 252);
-    display: flex;
-    flex-direction: row;
-}
+
 .about-pic{
     display: flex;
     flex-direction: row;
@@ -278,4 +278,155 @@ footer div .feedback{
 #contact .fields .form button:hover{
     cursor: pointer;
     background-color:#3883BC ;
+}
+div.contact-title{
+    padding-right: 0%;
+}
+.order-menu{
+    display: flex;
+   
+}
+
+select{
+    background-color: beige;
+font-size: 23px;
+height: 30px;
+margin-top: 25px;
+margin-left: 52px;
+margin-right: auto;
+
+}
+
+/* order list */
+.wrapper{
+    margin:0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+  .wrapper > div{
+    width:200px;
+    height: 300px;
+    border: 1px solid #f0f0f0;
+    padding:5px;
+    margin: 5px;
+  }
+  
+  .wrapper > div > img {
+    width: 100%;
+  }
+  .wrapper .pics3{
+    display: flex;
+    flex-direction: row;
+  }
+  .wrapper button{
+    width: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* order list */
+  .order ul .order-listt{
+    border: 1px solid #0a0505;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 10px;
+    background-color: red;
+    height: fit-content; */
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
+
+    
+  }
+  
+  .order-menu .order{
+    width: 490px;
+    height: 650px;
+    border: 3px solid;
+    overflow: scroll;
+  }
+  .order ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20%;
+  }
+
+  .order ul li{
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+  }
+  .res{
+    width:100% ;
+    display: flex;
+    margin-top: 10%;
+    justify-content: center;
+  }
+  .res1{
+    width:100% ;
+    display: flex;
+    margin-top: 10%;
+    justify-content: center;
+  }
+@media screen and (max-width:500px) {
+    .second-pic{
+        display: flex;
+        flex-direction: column;
+    }
+/* .cadre{
+     width:700px ;
+display:flex;
+flex-direction: column;
+ 
+
+} */
+.res{
+    width:100% ;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    justify-content: center;
+
+    
+}
+.res1{
+    width:100% ;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.test{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.second-pic{
+    width: 60%; 
+    margin: 0%;
+}
+.picture{
+    width: 100%;
+}
+.pic1{
+
+    width: 150%;
+    margin-left: 25%;
+}
+.pic2{
+    width: 120%;
+    margin-left: 23%;
+
+}
+
+
+
 }
