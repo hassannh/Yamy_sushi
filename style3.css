@@ -54,13 +54,11 @@ ul li{
     cursor: pointer;
     transition: 0.8s;
 }
-.whilehovering li a{
+/* .whilehovering li a{
     color: rgb(8, 5, 5);
     text-decoration: none;
-}
-.whilehovering :hover{
-    color: blue;
-}
+} */
+
 .search{
     height: 36vh;
     width: 100%;
@@ -146,9 +144,6 @@ footer {
     justify-content: space-around;
     
 }
-footer .feedback{
-    
-}
 
 .service_card{
     background:#a2aab3fb ;
@@ -193,6 +188,8 @@ footer .feedback{
 .con-pic{
 display: flex;
 justify-content: space-around;
+margin-top: 20%;
+flex-wrap: wrap;
 }
 .second-pic #second-title {
     display: flex;
@@ -229,6 +226,7 @@ justify-content: space-around;
     align-items: center;
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    
 }
 
 #contact .icon img{
@@ -390,7 +388,11 @@ margin-right: auto;
     display: none;
   }
 
+  .menu .logo-menu {
+    display: flex;
+    gap: 20px;
 
+}
 @media screen and (max-width:500px) {
     body{
         background-image: url(image/bachgr.jpg);
@@ -404,7 +406,7 @@ margin-right: auto;
         z-index: 3;
         display: block;
         padding: 10px;
-        background: blue;
+        background: rgb(210, 210, 219);
         cursor: pointer;
       }
 
@@ -503,5 +505,8 @@ footer{
 .search{
     margin-top: -10px;
 }
+/* #contact{
+    flex-wrap: wrap;
+} */
 
 }
