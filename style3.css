@@ -241,6 +241,10 @@ flex-wrap: wrap;
 #contact .fields{
     grid-column: 1;
     margin-left: 20px;
+    flex-wrap: wrap;
+}
+#contact .fields .othman{
+    flex-wrap: wrap;
 }
 #contact .icon{
     grid-column: 2;
@@ -406,8 +410,10 @@ margin-right: auto;
         z-index: 3;
         display: block;
         padding: 10px;
-        background: rgb(210, 210, 219);
+        background: rgba(102, 43, 43, 0.452);
+        border: none;
         cursor: pointer;
+        border-radius: 13px;
       }
 
     .menu ul {
