@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="style3.css" />
     <!-- icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
+        type='text/css'>
     <title>HIsushi</title>
 </head>
 <!-- nav bar -->
 
 <body class="reponsive">
     <div class="menu">
-        <button onclick="toggleMenu()" class="mobil-button">X</button>
+        <button onclick="toggleMenu()" class="mobil-button"><i class="fa fa-bars togle"></i></button>
         <ul class="whilehovering" id="whilehovering">
             <div class="logo-menu">
                 <img src="image/logo.png" alt="logo" height="32px">
@@ -44,98 +45,84 @@
     <section>
         <div class="order-menu">
             <div class="news">
-                <select name="" id="">
-                    <option value="0" selectet>categories</option>
-                    <option value="">SALADE</option>
-                    <option value="">NOS SUSHI</option>
-                    <option value="">OBENTO</option>
-                    <option value="">PLAT</option>
-                    <option value="">BOISSON</option>
-                    <option value="">DESSERT</option>
+                categories : <select name="" id="" onchange="OnGradeChanged(this.value);">
+                    <option value="all" selectet>all</option>
+                    <option value="SALADE">SALADE</option>
+                    <option value="SUSHI">SUSHI</option>
+                    <option value="OBENTO">OBENTO</option>
                 </select>
 
                 <div class="wrapper">
+                        <div class="ca caaa" id="item1">
+                            <img src="image/sushi5.jpg">
+                            <br>
+                            <h2>sushi</h2>
+                            $<span class="product-price">77.5</span>
+                            <i onclick="moveToCarte(item1)" class='bx bx-shopping-bag chop-bage'></i>
 
-                    <div class="ca">
-                        <img src="image/chef2.jpg">
-                        <br>
-                        <h2>sushi</h2>
-                        <span class="product-price">$77.5</span>
-                        <i class='bx bx-shopping-bag chop-bage'></i>
-
-                    </div>
-                    <div class="ca">
-                        <img src="image/chef2.jpg">
-                        <br>
-                        <h2>sushi</h2>
-                        <span class="product-price">$77.5</span>
-                        <i class='bx bx-shopping-bag chop-bage'></i>
-                    </div>
-                    <div class="ca">
-                        <img src="image/chef2.jpg">
-                        <br>
-                        <h2>sushi</h2>
-                        <span class="product-price">$77.5</span>
-                        <i class='bx bx-shopping-bag chop-bage'></i>
-                    </div>
-
-
-                    <div class="ca">
-                        <img src="image/chef2.jpg">
-                        <br>
-                        <h2>sushi</h2>
-                        <span class="product-price">$77.5</span>
-                        <i class='bx bx-shopping-bag chop-bage'></i>
-                    </div>
-                    <div class="ca">
-                        <img src="image/chef2.jpg">
-                        <br>
-                        <h2>sushi</h2>
-                        <span class="product-price">$77.5</span>
-                        <i class='bx bx-shopping-bag chop-bage'></i>
-                    </div>
-                    <div class="ca">
-                        <img src="image/chef2.jpg">
-                        <br>
-                        <h2>sushi</h2>
-                        <span class="product-price">$77.5</span>
-                        <i class='bx bx-shopping-bag chop-bage'></i>
-                    </div>
+                        </div>
+                        <div class="ca caaa" id="item2">
+                            <img src="image/sushi6.jpg">
+                            <br>
+                            <h2>sushi</h2>
+                            <span class="product-price">77.5</span>
+                            <i onclick="moveToCarte(item2)" class='bx bx-shopping-bag chop-bage'></i>
+                        </div>
+                        <div class="ca caaa" id="item3">
+                            <img src="image/sushi6.jpg">
+                            <br>
+                            <h2>sushi</h2>
+                            <span class="product-price">77.5</span>
+                            <i onclick="moveToCarte(item3)" class='bx bx-shopping-bag chop-bage'></i>
+                        </div>
+                        <div class="ca caaa">
+                            <img src="image/chef2.jpg">
+                            <br>
+                            <h2>sushi</h2>
+                            <span class="product-price">$77.5</span>
+                            <i class='bx bx-shopping-bag chop-bage'></i>
+                        </div>
+                        <div class="ca caaa">
+                            <img src="image/chef2.jpg">
+                            <br>
+                            <h2>sushi</h2>
+                            <span class="product-price">$77.5</span>
+                            <i class='bx bx-shopping-bag chop-bage'></i>
+                        </div>
+                        <div class="ca caaa">
+                            <img src="image/chef2.jpg">
+                            <br>
+                            <h2>sushi</h2>
+                            <span class="product-price">$77.5</span>
+                            <i class='bx bx-shopping-bag chop-bage'></i>
+                        </div>
 
 
-                    <div class="ca">
-                        <img src="image/chef2.jpg">
-                        <br>
-                        <h2>sushi</h2>
-                        <span class="product-price">$77.5</span>
-                        <i class='bx bx-shopping-bag chop-bage'></i>
-                    </div>
-                    <div class="ca">
-                        <img src="image/chef2.jpg">
-                        <br>
-                        <h2>sushi</h2>
-                        <span class="product-price">$77.5</span>
-                        <i class='bx bx-shopping-bag chop-bage'></i>
-                    </div>
-                    <div class="ca">
-                        <img src="image/chef2.jpg">
-                        <br>
-                        <h2>sushi</h2>
-                        <span class="product-price">$77.5</span>
+                        <div class="ca caaa">
+                            <img src="image/chef2.jpg">
+                            <br>
+                            <h2>sushi</h2>
+                            <span class="product-price">$77.5</span>
+                            <i class='bx bx-shopping-bag chop-bage'></i>
+                        </div>
+                        <div class="ca caaa">
+                            <img src="image/chef2.jpg">
+                            <br>
+                            <h2>sushi</h2>
+                            <span class="product-price">$77.5</span>
+                            <i class='bx bx-shopping-bag chop-bage'></i>
+                        </div>
+                        <div class="ca caaa">
+                            <img src="image/chef2.jpg">
+                            <br>
+                            <h2>sushi</h2>
+                            <span class="product-price">$77.5</span>
 
-                        <i class='bx bx-shopping-bag chop-bage'></i>
-                    </div>
+                            <i class='bx bx-shopping-bag chop-bage'></i>
+                        </div>
+                    <!-- second category -->
 
-
-                    <div class="ca">
-                        <img src="image/chef2.jpg">
-                        <br>
-                        <h2>sushi</h2>
-                        <span class="product-price">$77.5</span>
-
-                        <i class='bx bx-shopping-bag chop-bage'></i>
-                    </div>
-                    <div class="ca">
+                    <div class="ca caa">
                         <img src="image/chef2.jpg">
                         <br>
                         <h2>sushi</h2>
@@ -143,7 +130,82 @@
 
                         <i class='bx bx-shopping-bag chop-bage'></i>
                     </div>
-                    <div class="ca">
+
+                    <div class="ca caa">
+                        <img src="image/chef2.jpg">
+                        <br>
+                        <h2>sushi</h2>
+                        <span class="product-price">$77.5</span>
+
+                        <i class='bx bx-shopping-bag chop-bage'></i>
+                    </div>
+
+                    <div class="ca caa">
+                        <img src="image/chef2.jpg">
+                        <br>
+                        <h2>sushi</h2>
+                        <span class="product-price">$77.5</span>
+
+                        <i class='bx bx-shopping-bag chop-bage'></i>
+                    </div>
+
+                    <div class="ca caa">
+                        <img src="image/chef2.jpg">
+                        <br>
+                        <h2>sushi</h2>
+                        <span class="product-price">$77.5</span>
+
+                        <i class='bx bx-shopping-bag chop-bage'></i>
+                    </div>
+
+                    <div class="ca caa">
+                        <img src="image/chef2.jpg">
+                        <br>
+                        <h2>sushi</h2>
+                        <span class="product-price">$77.5</span>
+
+                        <i class='bx bx-shopping-bag chop-bage'></i>
+                    </div>
+
+                    <!-- third category -->
+
+                    <div class="ca c">
+                        <img src="image/chef2.jpg">
+                        <br>
+                        <h2>sushi</h2>
+                        <span class="product-price">$77.5</span>
+
+                        <i class='bx bx-shopping-bag chop-bage'></i>
+                    </div>
+
+                    <div class="ca c">
+                        <img src="image/chef2.jpg">
+                        <br>
+                        <h2>sushi</h2>
+                        <span class="product-price">$77.5</span>
+
+                        <i class='bx bx-shopping-bag chop-bage'></i>
+                    </div>
+
+                    <div class="ca c">
+                        <img src="image/chef2.jpg">
+                        <br>
+                        <h2>sushi</h2>
+                        <span class="product-price">$77.5</span>
+
+                        <i class='bx bx-shopping-bag chop-bage'></i>
+                    </div>
+
+                    <div class="ca c">
+                        <img src="image/chef2.jpg">
+                        <br>
+                        <h2>sushi</h2>
+                        <span class="product-price">$77.5</span>
+
+                        <i class='bx bx-shopping-bag chop-bage'></i>
+                    </div>
+
+                    <div class="ca c">
                         <img src="image/chef2.jpg">
                         <br>
                         <h2>sushi</h2>
@@ -157,7 +219,7 @@
 
             <div class="order">
                 <!-- CONTENT -->
-                <div class="cart-content">
+                <div class="cart-content" id="cart-content">
                     <!-- TEST BOX -->
                     <div class="cart-box">
                         <img src="image/OIP (2).jpg" alt="" class="cart-img">
@@ -173,13 +235,13 @@
                 <!-- TOTAL-->
                 <div class="total">
                     <div class="total-title">Total</div>
-                    <div class="total-price">$0</div>
+                    $<div class="total-price" id="total-price">0</div>
                     <!-- BUY BUTTON-->
                     <button type="button" class="btn-buy">Buy Now</button>
                 </div>
-                
 
-                
+
+
             </div>
         </div>
 

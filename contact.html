@@ -6,13 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style3.css">
+    <!-- icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
+        type='text/css'>
     <title>HIsushi</title>
 </head>
 <!-- nav bar -->
 
 <body class="reponsive">
     <div class="menu">
-        <button onclick="toggleMenu()" class="mobil-button">X</button>
+        <button onclick="toggleMenu()" class="mobil-button"><i class="fa fa-bars togle"></i></button>
         <ul class="whilehovering" id="whilehovering">
             <div class="logo-menu">
                 <img src="image/logo.png" alt="logo" height="32px">
@@ -76,7 +79,7 @@
                 <textarea id="msg" placeholder=" your message" rows="6"></textarea><br>
             </div>
             <div class="form">
-                <button type="button">Submit</button>
+                <button type="button" onclick="alert('success')">Submit</button>
             </div>
         </div>
         <div class="icon">

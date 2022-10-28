@@ -315,14 +315,14 @@ margin-right: auto;
 }
 
 /* order list */
-.wrapper{
+.wrapper {
     max-width: 700px;
     margin:0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .wrapper div{
+  .wrapper  div{
     width:200px;
     height: 300px;
     border: 1px solid #f0f0f0;
@@ -347,6 +347,18 @@ margin-right: auto;
     padding: 10px;
     border: 1px solid ;
     transition: .45;
+}
+
+/* hidden menu */
+.caa{
+    display: block;
+}
+.c{
+    display: block;
+}
+.active{
+    /* display: none; */
+    background-color: #0a0505;
 }
 .chop-bage{
     padding: 10px;
@@ -410,6 +422,8 @@ margin-right: auto;
     height: 650px;
     border: 3px solid;
     overflow: scroll;
+    margin-top: 3.8rem;
+    /* position: fixed; */
   }
   .order ul{
     display: flex;
@@ -450,6 +464,9 @@ margin-right: auto;
     display: flex;
     gap: 20px;
 
+}
+.disabled_list{
+    display: none;
 }
 @media screen and (max-width:500px) {
     body{
