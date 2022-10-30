@@ -61,11 +61,12 @@ var total = 0;
 }
 
 function moveToCarte(el){
-    var cl = el.cloneNode(true);
+    // var chi = getElementsByClassName("wrapper");
+    var clone = el.cloneNode(true);
     total += parseFloat(el.children[3].textContent);
-    console.log(parseFloat(el.children[3].textContent));
-    console.log(total);
-    document.getElementById("cart-content").appendChild(cl);
+    document.getElementById("order").appendChild(clone);
     document.getElementById("total-price").textContent = total;
+    console.log(parseFloat(el.children[3].textContent));
+    // console.log(total);
 }
 

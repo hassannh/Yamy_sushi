@@ -560,13 +560,16 @@ margin-right: auto;
 
     padding-bottom: 16%;
 }
-#h1f{
-    text-align: center;
-    padding-right: 40px;
+.picture h1{
+    /* text-align: center; */
+    /* padding-right: 40px; */
+    margin-left: 26px;
 }
 #second-title{
+    /* justify-content: flex-start; */
     text-align: center;
     padding-left: 150px;
+    
 }
 footer{
     display: flex;
