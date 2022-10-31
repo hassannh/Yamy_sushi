@@ -4,6 +4,21 @@ function toggleMenu() {
 get.classList.toggle("hide-menu")
 }
 
+// function toggle (){
+
+//     var mytoggle = document.querySelector(".mylist");
+
+
+//     mytoggle.style.display="flex";
+//     mytoggle.classList.toggle("mytoggle");
+// }
+
+
+
+
+
+
+
 var total = 0;
 
  var dishes = document.querySelectorAll(".wrapper")

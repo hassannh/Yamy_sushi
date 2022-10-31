@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="responsive.css">
     <!-- icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
         type='text/css'>
@@ -16,17 +17,35 @@
 <body class="reponsive">
     <div class="menu">
         <button onclick="toggleMenu()" class="mobil-button"><i class="fa fa-bars togle"></i></button>
-        <ul class="whilehovering" id="whilehovering">
+        
+
+        <ul class="whilehovering hide-menu" id="whilehovering">
             <div class="logo-menu">
-                <img src="image/logo.png" alt="logo" height="32px">
-                <h2 class="logo_name">HIsushi</h2>
-            </div>
+            <img src="image/logo.png" alt="logo" height="32px">
+            <h2 class="logo_name">HIsushi</h2>
+        </div>
             <li><a href="index.html">home</a></li>
             <li><a href="carte.html">Carte</a></li>
             <li><a href="about.html">about</a></li>
             <li><a href="contact.html">contact</a></li>
         </ul>
     </div>
+    <!-- <nav class="mynav">
+        <div class="logo-menu">
+            <img class="myimg" src="image/logo.png" alt="">
+        </div>
+        <ul class="mylist">
+        <li><a href="">HOME</a>  </li>
+        <li><a href="">CARTE</a>  </li>
+        <li><a href="">ABOUT</a>  </li>
+        <li><a href="">CONTACT</a>  </li>
+
+      
+
+        </ul>
+        <button onclick="toggle ()" class="mobil-button"><i class="fa fa-bars togle"></i></button>
+
+    </nav> -->
 
     <!-- search and submit button -->
     <section>
@@ -49,7 +68,7 @@
                 officia pariatur molestiae? Corrupti
                 officiis <br> dolorum magni eius ipsum.</p>
         </div>
-        <div>
+        <div class="pic-contact">
             <img src="image/OIP (2).jpg" alt="">
         </div>
     </div>
@@ -79,7 +98,7 @@
                 <textarea id="msg" placeholder=" your message" rows="6"></textarea><br>
             </div>
             <div class="form">
-                <button type="button" onclick="alert('success')">Submit</button>
+                <button type="button" onclick="alert('your message was saved')">Submit</button>
             </div>
         </div>
         <div class="icon">
@@ -89,22 +108,9 @@
                         src="https://maps.google.com/maps?q=tokyo%20sushi&t=&z=13&ie=UTF8&iwloc=&output=embed"
                         frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                     <a href="https://123movies-to.org/%22%3E"></a><br>
-                    <style>
-                        /* .mapouter {
-                            position: relative;
-                            text-align: right;
-                            height: 100%;
-                            width: 100%;
-                        } */
-                    </style><a href="https://www.embedgooglemap.net/%22%3Egoogle embed maps"></a>
-                    <style>
-                        /* .gmap_canvas {
-                            overflow: hidden;
-                            background: none !important;
-                            height: 100%;
-                            width: 100%;
-                        } */
-                    </style>
+        
+                    <a href="https://www.embedgooglemap.net/%22%3Egoogle embed maps"></a>
+                  
                 </div>
             </div>
         </div>

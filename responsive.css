@@ -1,0 +1,164 @@
+@media screen and (max-width:500px) {
+    body{
+        background-image: url(image/bachgr.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 210px;
+        width: 100%;
+    }
+    .mobil-button {
+        position: absolute;
+        right: 0%;
+        z-index: 3;
+        display: block;
+        padding: 10px;
+        background: rgba(102, 43, 43, 0.452);
+        border: none;
+        cursor: pointer;
+        border-radius: 13px;
+      }
+      .whilehovering{
+        display: none;
+      }
+
+    .menu ul {
+        position: absolute;
+        flex-direction: column;
+        gap: 10px;
+        z-index: 2;
+        top: 0%;
+        /* padding-bottom: 20px; */
+        transition: all 400ms linear;
+
+    }
+    .menu .hide-menu {
+        top:-100%;
+        display: none;
+    }
+    
+
+    .menu .logo-menu {
+        display: flex;
+
+    }
+    .menu .logo-menu h2 {
+        margin-left: 6px;
+        margin-top: 11px;
+    }
+
+
+    .second-pic{
+        display: flex;
+        flex-direction: column;
+    }
+
+.res{
+    width:100% ;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    justify-content: center;
+
+    
+}
+.res1{
+    width:100% ;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.test{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.second-pic{
+    width: 60%; 
+    margin: 0%;
+}
+.picture{
+    width: 100%;
+}
+.pic1{
+
+    width: 150%;
+    margin-left: 25%;
+}
+.pic2{
+    width: 120%;
+    margin-left: 23%;
+
+}
+#titlee{
+
+    padding-bottom: 16%;
+}
+.picture h1{
+    /* text-align: center; */
+    /* padding-right: 40px; */
+    margin-left: 26px;
+}
+#second-title{
+    /* justify-content: flex-start; */
+    text-align: center;
+    padding-left: 150px;
+    
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+.feedback{
+    margin-bottom:50px ;
+    text-align: center;
+    
+}
+.search{
+    margin-top: -10px;
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+    width:auto;
+}
+iframe{
+    width: 100%;
+}
+.fields{
+    width: 100%;
+    margin-left: 0%!important;
+}
+.icon{
+    width: 100%;
+}
+/* .mylist{
+    position: absolute;
+    top:30px;
+    left: 320px;
+    background-color: beige;
+    display: none;
+    flex-direction: column;
+    height: 300px;
+    width:40%;
+    gap:40px;
+    z-index: 1;
+} */
+#categories-list{
+    margin-left: 8rem;
+}
+.backgr-cart{
+    /* background-color: rgb(17, 102, 176); */
+    margin: auto;
+    width: 100%;
+}
+
+}

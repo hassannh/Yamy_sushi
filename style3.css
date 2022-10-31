@@ -2,25 +2,43 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
 }
 body {
     background-image: url(image/bachgr.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-    /* margin-bottom: 0%; */
+    margin-bottom: 0%; 
+}
+ 
+.mynav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: bisque;
+}
+.myimg{
+    width:50Px;
+    height:50px;
 
+}
+.mylist{
+    display:flex;
+    gap: 5px;
+    transform: translateX(-30px);
+    margin-top: 10px;
+    
+}
+.mylist li a {
+    color: #000;
 }
 
 .logo_name{
     color: rgba(5, 4, 4, 0.63);
     font-size: 19px;
     font-family: Arial;
-    /* float: left;  */
-    margin-left: 5%;
-    position: relative;
-    right: 18%;
-    top: 3px;
-    
+    margin-left: -1rem;
 }
 .menu ul{
     display: flex;
@@ -58,6 +76,9 @@ ul li{
     color: rgb(8, 5, 5);
     text-decoration: none;
 } */
+.whilehovering{
+    display: none;
+}
 
 .search{
     height: 36vh;
@@ -107,20 +128,21 @@ ul li{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
-
-
 }
 
 .service_cards1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border:1px solid;
-    border-color: transparent;
+    /* border:1px solid; */
+    /* border-color: transparent; */
     border-radius: 20px;
     margin: 20px;   
-    opacity: 0.9;
+    /* box-shadow: 2px 5px 12px 4px; */
+}
+.service_cards1 img{
+    border-radius: 20px;
+    box-shadow: 2px 5px 12px 4px;
 }
 .example{
     height: 200px;
@@ -163,38 +185,54 @@ footer {
     justify-content: center;
 }
 
-.menu :hover{
-    background-color: beige;
-}
 .picture{
-
     display: flex;
     flex-direction: column;
-    margin-top: 20%;
+    margin-top: 24%;
 }
 .second-pic{
     text-align: right;
-    margin-left: auto;
-    width: fit-content;
-    margin-right: 20px;
     display: flex;
-    gap: 20px;
+    justify-content: space-around;
     
 }
 .pic1{
     width:518px;
     margin-left: 26px;
+    box-shadow: 2px 5PX 12PX 4PX;
+    border-radius: 12px;
+}
+.pic2{
+    border-radius: 12px;
+    box-shadow: 2px 5px 12px 4px;
+}
+.about-img img{
+    border-radius: 12px;
+    box-shadow: 2px 5px 12px 4px;
+}
+.backgr-cart{
+    /* background-image:url(image/salade-back.png);
+    background-repeat: no-repeat;
+    background-size: contain; */
+    margin-top: 13rem;
+    margin-left: 22rem;
+}
+.pic-contact img{
+    border-radius: 12px;
+    box-shadow: 2px 5px 12px 4px;
 }
 .con-pic{
 display: flex;
 justify-content: space-around;
-margin-top: 20%;
+margin-top: 25%;
 flex-wrap: wrap;
+width: 100%;
 }
 .second-pic #second-title {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: left;
 }
 
 
@@ -205,11 +243,14 @@ flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    padding: 18px;
 } 
 .about-pic #about-title {
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    
 }
 .about-pic .about-img {
     width: 50%;
@@ -298,19 +339,18 @@ div.contact-title{
 }
 section .order-menu{
     display: flex;
-    padding-top: 20%;
     flex-wrap: wrap;
     justify-content: space-around;
-   
+    margin-top: -7rem;
 }
 
 select{
     background-color: beige;
-font-size: 23px;
-height: 30px;
-margin-top: 25px;
-margin-left: 52px;
-margin-right: auto;
+    font-size: 23px;
+    height: 30px;
+    margin-top: 27px;
+    margin-left: 52px;
+    margin-right: auto;
 
 }
 
@@ -321,6 +361,7 @@ margin-right: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    box-shadow: 1px 5px 15px black;
   }
   .wrapper  div{
     width:200px;
@@ -420,11 +461,19 @@ margin-right: auto;
   .order-menu .order{
     width: 490px;
     height: 650px;
-    border: 3px solid;
+    /* border: 3px solid; */
+    /* box-shadow: #000 1px 1px; */
+    box-shadow: -1px 0px 15px black;
+    border-radius: 5px;
     overflow: scroll;
-    margin-top: 3.8rem;
+    margin-top: 3.5rem;
     /* position: fixed; */
   }
+  /* #categories-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  } */
   .order ul{
     display: flex;
     flex-direction: column;
@@ -468,130 +517,6 @@ margin-right: auto;
 .disabled_list{
     display: none;
 }
-@media screen and (max-width:500px) {
-    body{
-        background-image: url(image/bachgr.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 210px;
-    }
-    .mobil-button {
-        position: absolute;
-        right: 0%;
-        z-index: 3;
-        display: block;
-        padding: 10px;
-        background: rgba(102, 43, 43, 0.452);
-        border: none;
-        cursor: pointer;
-        border-radius: 13px;
-      }
-
-    .menu ul {
-        position: absolute;
-        flex-direction: column;
-        gap: 10px;
-        z-index: 2;
-        top: 0%;
-        padding-bottom: 20px;
-        transition: all 400ms linear;
-
-    }
-    .menu .hide-menu {
-        top:-100%;
-    }
-
-    .menu .logo-menu {
-        display: flex;
-
-    }
-    .menu .logo-menu h2 {
-        margin-left: 30px;
-    }
-
-
-    .second-pic{
-        display: flex;
-        flex-direction: column;
-    }
-
-.res{
-    width:100% ;
-    display: flex;
-    flex-direction: column;
-    margin-top: 10%;
-    justify-content: center;
-
-    
-}
-.res1{
-    width:100% ;
-    display: flex;
-    flex-direction: column;
-    margin-top: 10%;
-    justify-content: center;
-    align-items: center;
-
-    
-}
-.test{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-.second-pic{
-    width: 60%; 
-    margin: 0%;
-}
-.picture{
-    width: 100%;
-}
-.pic1{
-
-    width: 150%;
-    margin-left: 25%;
-}
-.pic2{
-    width: 120%;
-    margin-left: 23%;
-
-}
-#titlee{
-
-    padding-bottom: 16%;
-}
-.picture h1{
-    /* text-align: center; */
-    /* padding-right: 40px; */
-    margin-left: 26px;
-}
-#second-title{
-    /* justify-content: flex-start; */
-    text-align: center;
-    padding-left: 150px;
-    
-}
-footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-}
-.feedback{
-    margin-bottom:50px ;
-    text-align: center;
-    
-}
-.search{
-    margin-top: -10px;
-}
-#contact{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: space-around;
-    width:auto;
-}
-
+select #categories-list{
+margin-top: ;
 }
