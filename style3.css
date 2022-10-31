@@ -18,6 +18,9 @@ body {
     justify-content: space-between;
     background-color: bisque;
 }
+#whilehovering li{
+    color: #000;
+}
 .myimg{
     width:50Px;
     height:50px;

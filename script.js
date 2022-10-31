@@ -20,6 +20,7 @@ get.classList.toggle("hide-menu")
 
 
 var total = 0;
+var iddd=1;
 
  var dishes = document.querySelectorAll(".wrapper")
  var SALADE = document.getElementsByClassName("caaa")
@@ -75,13 +76,41 @@ var total = 0;
 
 }
 
+// function ready() {
+//     var remove = document.getElementsByClassName('function ready() {
+//     var remove = document.getElementsByClassName('cart-remove')
+//     for (var i = 0; i < remove.length; i++) {
+//         var button = remove[i]
+//         button.addEventListener('click', removeCartItem)
+//         // console.log(remove)
+
+//     }')
+//     for (var i = 0; i < remove.length; i++) {
+//     var button = remove[i]
+//     button.addEventListener('click', )
+//     console.log(remove)
+    
+//     }
+// }
+
 function moveToCarte(el){
     // var chi = getElementsByClassName("wrapper");
     var clone = el.cloneNode(true);
     total += parseFloat(el.children[3].textContent);
+    clone.id = clone.id+""+iddd;
+    clone.children[5].id=clone.children[5].id+""+iddd;
+    iddd++;
     document.getElementById("order").appendChild(clone);
     document.getElementById("total-price").textContent = total;
-    console.log(parseFloat(el.children[3].textContent));
+    // console.log(parseFloat(el.children[3].textContent));
     // console.log(total);
+}
+
+
+
+function remoove(event){
+    // console.log(event)
+     var delet = document.getElementById(event);
+    delet.parentElement.remove();
 }
 

@@ -49,79 +49,80 @@
         <div class="order-menu">
             <div class="news">
                  <select name="" id="categories-list" onchange="OnGradeChanged(this.value);">
-                    <option value="all" selectet>all</option>
+                    <option value="all" selectet>All</option>
                     <option value="SALADE">SALADE</option>
                     <option value="SUSHI">SUSHI</option>
                     <option value="OBENTO">OBENTO</option>
                 </select>
 
+                <!-- first category -->
                 <div class="wrapper">
                     <div class="ca caaa" id="item1">
                         <img src="image/sushi5.jpg">
                         <br>
                         <h2>sushi</h2>
-                        $<span class="product-price">77.5</span>
+                        $<span class="product-price">70</span>
                         <i onclick="moveToCarte(item1)" class='bx bx-shopping-bag chop-bage'></i>
-
-
+                        <i id="remove" onclick="remoove(this.id);" class='bx bxs-trash-alt cart-remove'></i>
                     </div>
                     <div class="ca caaa" id="item2">
                         <img src="image/sushi6.jpg">
                         <br>
                         <h2>sushi</h2>
+                        
                         <span class="product-price">77.5</span>
                         <i onclick="moveToCarte(item2)" class='bx bx-shopping-bag chop-bage'></i>
-                        <i class='bx bxs-trash-alt cart-remove'></i>
+                        <i id="remove" onclick="remoove(this.id);" class='bx bxs-trash-alt cart-remove'></i>
                     </div>
                     <div class="ca caaa" id="item3">
-                        <img src="image/sushi6.jpg">
+                        <img src="img/AROMAKI SAUMON CUIT.png">
                         <br>
                         <h2>sushi</h2>
                         <span class="product-price">77.5</span>
                         <i onclick="moveToCarte(item3)" class='bx bx-shopping-bag chop-bage'></i>
-                        <i class='bx bxs-trash-alt cart-remove'></i>
+                        <i id="remove" onclick="remoove(this.id);" class='bx bxs-trash-alt cart-remove'></i>
                     </div>
                     <div class="ca caaa" id="item4">
-                        <img src="image/chef2.jpg">
+                        <img src="img/BEIGNETS DE CREVETTES.png">
                         <br>
                         <h2>sushi</h2>
                         $<span class="product-price">77.5</span>
                         <i onclick="moveToCarte(item4)" class='bx bx-shopping-bag chop-bage'></i>
-                        <i class='bx bxs-trash-alt cart-remove'></i>
+                        <i id="remove" onclick="remoove(this.id);" class='bx bxs-trash-alt cart-remove'></i>
                     </div>
                     <div class="ca caaa" id="item5">
-                        <img src="image/chef2.jpg">
+                        <img src="img/CALIFORNIA CREAM CHEESE.png">
                         <br>
                         <h2>sushi</h2>
                         $<span class="product-price">77.5</span>
                         <i onclick="moveToCarte(item5)" class='bx bx-shopping-bag chop-bage'></i>
-                        <i class='bx bxs-trash-alt cart-remove'></i>
+                        <i id="remove" onclick="remoove(this.id);" class='bx bxs-trash-alt cart-remove'></i>
                     </div>
                     <div class="ca caaa" id="item6">
-                        <img src="image/chef2.jpg">
+                        <img src="img/NEMS.png">
                         <br>
                         <h2>sushi</h2>
                         <span class="product-price">77.5</span>
-                        <i class='bx bx-shopping-bag chop-bage'></i>
-                        <i class='bx bxs-trash-alt cart-remove'></i>
+                        <i onclick="moveToCarte(item6)" class='bx bx-shopping-bag chop-bage'></i>
+                        <i id="remove" onclick="remoove(this.id);" class='bx bxs-trash-alt cart-remove'></i>
                     </div>
 
 
                     <div class="ca caaa" id="item7">
-                        <img src="image/chef2.jpg">
+                        <img src="img/NOUILLES JAP POULET.png">
                         <br>
                         <h2>sushi</h2>
                         <span class="product-price">77.5</span>
-                        <i class='bx bx-shopping-bag chop-bage'></i>
-                        <i class='bx bxs-trash-alt cart-remove'></i>
+                        <i onclick="moveToCarte(item7)" class='bx bx-shopping-bag chop-bage'></i>
+                        <i id="remove" onclick="remoove(this.id);" class='bx bxs-trash-alt cart-remove'></i>
                     </div>
                     <div class="ca caaa" id="item8">
                         <img src="image/chef2.jpg">
                         <br>
                         <h2>sushi</h2>
                         <span class="product-price">77.5</span>
-                        <i class='bx bx-shopping-bag chop-bage'></i>
-                        <i class='bx bxs-trash-alt cart-remove'></i>
+                        <i onclick="moveToCarte(item8)" class='bx bx-shopping-bag chop-bage'></i>
+                        <i id="remove" onclick="remoove(this.id);" class='bx bxs-trash-alt cart-remove'></i>
                     </div>
                     <div class="ca caaa" id="item9">
                         <img src="image/chef2.jpg">
@@ -129,111 +130,111 @@
                         <h2>sushi</h2>
                         <span class="product-price">77.5</span>
 
-                        <i class='bx bx-shopping-bag chop-bage'></i>
-                        <i class='bx bxs-trash-alt cart-remove'></i>
+                        <i onclick="moveToCarte(item9)" class='bx bx-shopping-bag chop-bage'></i>
+                        <i id="remove" onclick="remoove(this.id);" class='bx bxs-trash-alt cart-remove'></i>
                     </div>
                     <!-- second category -->
 
-                    <div class="ca caa">
+                    <div class="ca caa " id="item10">
                         <img src="image/chef2.jpg">
                         <br>
                         <h2>sushi</h2>
                         <span class="product-price">77.5</span>
 
-                        <i class='bx bx-shopping-bag chop-bage'></i>
-                        <i class='bx bxs-trash-alt cart-remove'></i>
+                        <i onclick="moveToCarte(item10)" class='bx bx-shopping-bag chop-bage'></i>
+                        <i id="remove" onclick="remoove(this.id);" class='bx bxs-trash-alt cart-remove'></i>
                     </div>
 
-                    <div class="ca caa">
+                    <div class="ca caa" id="item11">
                         <img src="image/chef2.jpg">
                         <br>
                         <h2>sushi</h2>
                         <span class="product-price">77.5</span>
 
-                        <i class='bx bx-shopping-bag chop-bage'></i>
-                        <i class='bx bxs-trash-alt cart-remove'></i>
+                        <i onclick="moveToCarte(item11)" class='bx bx-shopping-bag chop-bage'></i>
+                        <i id="remove" onclick="remoove(this.id);" class='bx bxs-trash-alt cart-remove'></i>
                     </div>
 
-                    <div class="ca caa">
+                    <div class="ca caa" id="item12">
                         <img src="image/chef2.jpg">
                         <br>
                         <h2>sushi</h2>
                         <span class="product-price">77.5</span>
 
-                        <i class='bx bx-shopping-bag chop-bage'></i>
-                        <i class='bx bxs-trash-alt cart-remove'></i>
+                        <i onclick="moveToCarte(item12)" class='bx bx-shopping-bag chop-bage'></i>
+                        <i id="remove" onclick="remoove(this.id);" class='bx bxs-trash-alt cart-remove'></i>
                     </div>
 
-                    <div class="ca caa">
+                    <div class="ca caa" id="item13">
                         <img src="image/chef2.jpg">
                         <br>
                         <h2>sushi</h2>
                         <span class="product-price">77.5</span>
 
-                        <i class='bx bx-shopping-bag chop-bage'></i>
-                        <i class='bx bxs-trash-alt cart-remove'></i>
+                        <i onclick="moveToCarte(item13)" class='bx bx-shopping-bag chop-bage'></i>
+                        <i id="remove" onclick="remoove(this.id);" class='bx bxs-trash-alt cart-remove'></i>
                     </div>
 
-                    <div class="ca caa">
+                    <div class="ca caa" id="item14">
                         <img src="image/chef2.jpg">
                         <br>
                         <h2>sushi</h2>
                         <span class="product-price">77.5</span>
 
-                        <i class='bx bx-shopping-bag chop-bage'></i>
-                        <i class='bx bxs-trash-alt cart-remove'></i>
+                        <i onclick="moveToCarte(item14)" class='bx bx-shopping-bag chop-bage'></i>
+                        <i id="remove" onclick="remoove(this.id);" class='bx bxs-trash-alt cart-remove'></i>
                     </div>
 
                     <!-- third category -->
 
-                    <div class="ca c">
+                    <div class="ca c" id="item15">
                         <img src="image/chef2.jpg">
                         <br>
                         <h2>sushi</h2>
                         <span class="product-price">77.5</span>
 
-                        <i class='bx bx-shopping-bag chop-bage'></i>
-                        <i class='bx bxs-trash-alt cart-remove'></i>
+                        <i onclick="moveToCarte(item15)" class='bx bx-shopping-bag chop-bage'></i>
+                        <i id="remove" onclick="remoove(this.id);" class='bx bxs-trash-alt cart-remove'></i>
                     </div>
 
-                    <div class="ca c">
+                    <div class="ca c" id="item16">
                         <img src="image/chef2.jpg">
                         <br>
                         <h2>sushi</h2>
                         <span class="product-price">77.5</span>
 
-                        <i class='bx bx-shopping-bag chop-bage'></i>
-                        <i class='bx bxs-trash-alt cart-remove'></i>
+                        <i onclick="moveToCarte(item16)" class='bx bx-shopping-bag chop-bage'></i>
+                        <i id="remove" onclick="remoove(this.id);" class='bx bxs-trash-alt cart-remove'></i>
                     </div>
 
-                    <div class="ca c">
+                    <div class="ca c" id="item17">
                         <img src="image/chef2.jpg">
                         <br>
                         <h2>sushi</h2>
                         <span class="product-price">77.5</span>
 
-                        <i class='bx bx-shopping-bag chop-bage'></i>
-                        <i class='bx bxs-trash-alt cart-remove'></i>
+                        <i onclick="moveToCarte(item17)" class='bx bx-shopping-bag chop-bage'></i>
+                        <i id="remove" onclick="remoove(this.id);" class='bx bxs-trash-alt cart-remove'></i>
                     </div>
 
-                    <div class="ca c">
+                    <div class="ca c" id="item18">
                         <img src="image/chef2.jpg">
                         <br>
                         <h2>sushi</h2>
                         <span class="product-price">77.5</span>
 
-                        <i class='bx bx-shopping-bag chop-bage'></i>
-                        <i class='bx bxs-trash-alt cart-remove'></i>
+                        <i onclick="moveToCarte(item18)" class='bx bx-shopping-bag chop-bage'></i>
+                        <i id="remove" onclick="remoove(this.id);" class='bx bxs-trash-alt cart-remove'></i>
                     </div>
 
-                    <div class="ca c">
+                    <div class="ca c" id="item19">
                         <img src="image/chef2.jpg">
                         <br>
                         <h2>sushi</h2>
                         <span class="product-price">77.5</span>
 
-                        <i class='bx bx-shopping-bag chop-bage'></i>
-                        <i class='bx bxs-trash-alt cart-remove'></i>
+                        <i onclick="moveToCarte(item19)" class='bx bx-shopping-bag chop-bage'></i>
+                        <i id="remove" onclick="remoove(this.id);" class='bx bxs-trash-alt cart-remove'></i>
                     </div>
 
                 </div>
@@ -241,7 +242,7 @@
 
             <div class="order" id="order">
                 <!-- CONTENT -->
-                <div class="cart-content" id="cart-content">
+                <!-- <div class="cart-content" id="cart-content">
                     <!-- TEST BOX -->
                     <!-- <div class="cart-box">
                         <img src="image/OIP (2).jpg" alt="" class="cart-img">
@@ -252,7 +253,7 @@
                         </div>
                         <i class='bx bxs-trash-alt cart-remove'></i>
                     </div> -->
-                </div>
+                <!-- </div>  -->
                 <!-- TOTAL-->
                 <div class="total">
                     <div class="total-title">Total</div>

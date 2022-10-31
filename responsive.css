@@ -160,5 +160,19 @@ iframe{
     margin: auto;
     width: 100%;
 }
+.contact-para{
+    width: 300px;
+    margin-bottom: 15px;
+    text-align: center;
+    POSITION: relative;
+    right: -1px;
+}
+.para{
+    width: 300px;
+    margin-bottom: 15px;
+    text-align: center;
+    POSITION: relative;
+    right: 108px;
+}
 
 }
