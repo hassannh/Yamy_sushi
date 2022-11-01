@@ -12,31 +12,9 @@ body {
     margin-bottom: 0%; 
 }
  
-.mynav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: bisque;
-}
-#whilehovering li{
-    color: #000;
-}
-.myimg{
-    width:50Px;
-    height:50px;
-
-}
-.mylist{
-    display:flex;
-    gap: 5px;
-    transform: translateX(-30px);
-    margin-top: 10px;
-    
-}
-.mylist li a {
-    color: #000;
-}
-
+/* #whilehovering li{
+    color: rgb(224, 33, 33);
+} */
 .logo_name{
     color: rgba(5, 4, 4, 0.63);
     font-size: 19px;
@@ -51,14 +29,17 @@ body {
     width: 100%;
     position: fixed; 
     background-color: beige;
+    z-index: 100;
+    
 }
+/* ul #whilehovering li{
+    color: black;
+} */
 
 ul li{
     
     list-style: none;
     font-size: 14px; 
-    
-
 }
 
 .headBar{
@@ -74,6 +55,9 @@ ul li{
     justify-content: left;
     cursor: pointer;
     transition: 0.8s;
+}
+body div .menu #options{
+    color: black;
 }
 /* .whilehovering li a{
     color: rgb(8, 5, 5);
@@ -110,6 +94,7 @@ ul li{
     width: 100%;
     height: 100%;
     background-color: rgba(245, 245, 220, 0.395);
+    z-index: 1;
 
 }
 
