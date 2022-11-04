@@ -23,7 +23,6 @@ body {
 }
 .menu ul{
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     gap: 13%;
     width: 100%;
@@ -116,6 +115,13 @@ body div .menu #options{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+.img-size{
+    margin-left: 12px;
+    text-align: center;
+}
+.img-size img{
+    width:200px
 }
 
 .service_cards1{

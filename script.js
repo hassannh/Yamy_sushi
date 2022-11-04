@@ -1,7 +1,7 @@
 var get = document.getElementById("whilehovering")
 
 function toggleMenu() {
-get.classList.toggle("hide-menu")
+    get.classList.toggle("hide-menu")
 }
 
 // function toggle (){
@@ -20,13 +20,13 @@ get.classList.toggle("hide-menu")
 
 
 var total = 0;
-var iddd=1;
+var iddd = 1;
 
- var dishes = document.querySelectorAll(".wrapper")
- var SALADE = document.getElementsByClassName("caaa")
- var SUSHI = document.querySelectorAll(".caa")
- var OBENTO = document.querySelectorAll(".c")
- function OnGradeChanged(value){
+var dishes = document.querySelectorAll(".wrapper")
+var SALADE = document.getElementsByClassName("caaa")
+var SUSHI = document.querySelectorAll(".caa")
+var OBENTO = document.querySelectorAll(".c")
+function OnGradeChanged(value) {
     switch (value) {
         case "SALADE":
             for (let index = 0; index < SUSHI.length; index++) {
@@ -89,16 +89,16 @@ var iddd=1;
 //     var button = remove[i]
 //     button.addEventListener('click', )
 //     console.log(remove)
-    
+
 //     }
 // }
 
-function moveToCarte(el){
+function moveToCarte(el) {
     // var chi = getElementsByClassName("wrapper");
     var clone = el.cloneNode(true);
     total += parseFloat(el.children[3].textContent);
-    clone.id = clone.id+""+iddd;
-    clone.children[5].id=clone.children[5].id+""+iddd;
+    clone.id = clone.id + "" + iddd;
+    clone.children[5].id = clone.children[5].id + "" + iddd;
     iddd++;
     document.getElementById("order").appendChild(clone);
     document.getElementById("total-price").textContent = total;
@@ -108,9 +108,12 @@ function moveToCarte(el){
 
 
 
-function remoove(event){
+function remoove(event) {
     // console.log(event)
-     var delet = document.getElementById(event);
+    var delet = document.getElementById(event);
+    total -= parseFloat(delet.parentElement.children[3].textContent);
+    document.getElementById("total-price").textContent = total;
     delet.parentElement.remove();
+    console.log(total)
 }
 
